@@ -4,6 +4,7 @@
  * Copyright 2011-2023 The Bootstrap Authors
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&family=Rubik:ital,wght@0,400;0,700;1,500&display=swap");
 :root,
 [data-bs-theme=light] {
   --bs-blue: #0d6efd;
