@@ -11,10 +11,121 @@
 
 <body>
     <!-- Header -->
-    <header></header>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg bg-primary">
+            <div class="container">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Nosotros</a>
+                        </li>
+                    </ul>
+                </div>
+                <a href=""><img class="mt-5" src="assets/img/logo-fruna.svg" alt=""></a>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Visitanos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 49.682">
+            <g id="banner-svg" transform="translate(1210 -7537)">
+                <path id="Trazado_115" data-name="Trazado 115"
+                    d="M720.089,120H0v46.842c23.793-8.771,88.291-30.705,159.11-39.325,53.906-6.571,111.483-5.431,157.559,15.1q6.977,3.106,13.962,5.791C448.7,193.874,566.61,152.32,566.61,152.32s67.894-28.133,153.3-26.2v0l.089,0,.089,0v0c85.407-1.937,153.3,26.2,153.3,26.2s117.914,41.554,235.979-3.911q6.992-2.687,13.962-5.791c46.075-20.532,103.653-21.672,157.559-15.1,70.819,8.62,135.317,30.554,159.11,39.325V120Z"
+                    transform="translate(-1210 7417)" fill="#90190f" />
+                <path id="Trazado_116" data-name="Trazado 116"
+                    d="M720.089,120H0v13.857s76.819-19.542,159.11-6.34c22.672,3.62,45.765,9.741,67.788,19.441A239.93,239.93,0,0,0,257,158.12c25.613,7.371,42.175,5.551,55.777,0a108.7,108.7,0,0,0,17.852-9.711c15.952-10.241,31.8-22.482,61.267-24.513,70.379-4.85,89.781,55.806,218.4,4.851C641.855,117.924,685.2,120.8,720,120c34.8.8,79.214-2.425,109.7,8.747,128.616,50.955,148.019-9.7,218.4-4.851,29.464,2.031,45.316,14.272,61.268,24.513a108.653,108.653,0,0,0,17.852,9.711c13.6,5.551,30.164,7.371,55.777,0a239.99,239.99,0,0,0,30.1-11.162c22.023-9.7,45.115-15.821,67.788-19.441,82.29-13.2,159.11,6.34,159.11,6.34V120Z"
+                    transform="translate(-1210 7417)" fill="#d12315" />
+            </g>
+        </svg>
+    </header>
 
     <!-- Main -->
-    <main></main>
+    <main>
+        <!-- Carrusel -->
+        <div id="carouselExampleDark" class="carousel carousel-dark slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="assets/img/carrusel-helados.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="h1-carrusel">Es Temporada De Helados</h1>
+                        <h2 class="h2-carrusel">¿Cuales son tus favoritos?</h2>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="assets/img/carrusel-helados.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="h1-carrusel">Second slide label</h1>
+                        <h2 class="h2-carrusel">Some representative placeholder content for the second slide.</h2>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/carrusel-helados.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="h1-carrusel">Third slide label</h1>
+                        <h2 class="h2-carrusel">Some representative placeholder content for the third slide.</h2>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 162.988">
+                <path
+                    d="M720.089,162.989H0V29.133s76.819,19.542,159.11,6.34c22.672-3.62,45.765-9.741,67.788-19.441A239.929,239.929,0,0,1,257,4.871c25.613-7.371,42.175-5.551,55.777,0a108.7,108.7,0,0,1,17.852,9.711c15.952,10.241,31.8,22.482,61.267,24.513,70.379,4.85,89.781-55.806,218.4-4.851C647.5,48.982,685.2,54.785,720,55.583c34.8-.8,72.5-6.6,109.7-21.34,128.616-50.955,148.019,9.7,218.4,4.851,29.464-2.031,45.316-14.272,61.268-24.513a108.652,108.652,0,0,1,17.852-9.711c13.6-5.551,30.164-7.371,55.777,0a239.989,239.989,0,0,1,30.1,11.162c22.023,9.7,45.115,15.821,67.788,19.441,82.29,13.2,159.11-6.34,159.11-6.34V162.989Z"
+                    transform="translate(0 -0.001)" fill="#fff" />
+            </svg>
+        </div>
+
+        <!-- Productos -->
+        <section class="text-center my-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="h2">¿Cuáles son tus favoritos?</h2>
+                    <p class="p">Aquí podrás conocer todos nuestros deliciosos productos</p>
+                </div>
+                <div class="row my-5">
+                    <a class="col-4" href="#">
+                        <h3 class="h3">Galletas</h3>
+                        <img src="assets/img/balde-tabletones.png" alt="">
+                    </a>
+                    <a class="col-4" href="#">
+                        <h3 class="h3">Galletas</h3>
+                        <img src="assets/img/balde-tabletones.png" alt="">
+                    </a>
+                    <a class="col-4" href="#">
+                        <h3 class="h3">Galletas</h3>
+                        <img src="assets/img/balde-tabletones.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
 
     <!-- Footer -->
     <footer></footer>

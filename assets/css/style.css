@@ -11855,4 +11855,104 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+.h1-carrusel {
+  font-family: "Lilita One", sans-serif;
+  font-size: 48px;
+  line-height: 55px;
+  color: #FFFFFF;
+}
+
+.h2-carrusel {
+  font-family: "Rubik", sans-serif;
+  font-size: 32px;
+  line-height: 38px;
+  font-style: italic;
+  font-weight: 600;
+  color: #D12314;
+}
+
+.h2 {
+  font-family: "Lilita One", sans-serif;
+  font-size: 48px;
+  line-height: 55px;
+  color: #D12314;
+}
+
+.h3 {
+  font-family: "Rubik", sans-serif;
+  font-size: 32px;
+  line-height: 38px;
+  font-style: italic;
+  font-weight: 600;
+  color: #361C07;
+}
+
+.p {
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #361C07;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  position: relative;
+  z-index: 100;
+}
+
+.navbar {
+  background-color: #D12314 !important;
+  height: 120px;
+}
+.navbar .container {
+  max-width: 100%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.navbar .navbar-nav {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar .navbar-nav .nav-link {
+  font-family: "Lilita One", sans-serif;
+  font-size: 28px;
+  color: #ffffff;
+}
+.navbar .nav-link.active {
+  color: #D6B200 !important;
+}
+.navbar .nav-link:hover {
+  color: #D6B200;
+}
+
+/* Carrusel */
+.carousel {
+  height: 100% vh;
+  top: -60px;
+  z-index: 0;
+  background-image: url(../img/carrusel-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel-caption {
+  top: 44%;
+  right: 50%;
+}
+
+/* .carousel-item.active {
+    height: 100vh;
+}
+
+.carousel-item {
+    height: 100vh;
+} *//*# sourceMappingURL=style.css.map */
