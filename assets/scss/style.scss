@@ -8,13 +8,21 @@
 //
 
 // Codigo General
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none !important;
+}
 .h1-carrusel {
+    text-align: start;
     font-family: 'Lilita One', sans-serif;
     font-size: 48px;
     line-height: 55px;
     color: #FFFFFF;
 }
 .h2-carrusel {
+    text-align: start;
     font-family: 'Rubik', sans-serif;
     font-size: 32px;
     line-height: 38px;
@@ -42,6 +50,15 @@
     line-height: 26px;
     font-weight: 400;
     color: #361C07;
+}
+.boton {
+    background-color: #D6B200;
+    padding: 12px 24px;
+    border-radius: 22px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    color: #FFFFFF;
 }
 
 // Header 
