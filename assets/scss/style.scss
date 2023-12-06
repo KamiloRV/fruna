@@ -100,7 +100,6 @@
 
 /* Carrusel */
 .carousel {
-    height: 100%vh;
     top: -60px;
     z-index: 0;
     background-image: url(../img/carrusel-bg.png);
@@ -117,8 +116,7 @@
 .bgcho{
     text-align: center;
     position: relative;
-    height: 100%vh;
-    top: -165px;
+    top: -200px;
     width: 100%;
     background-image: url(../img/bgcho.png);
     background-repeat: no-repeat;

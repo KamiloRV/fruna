@@ -11856,7 +11856,15 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none !important;
+}
+
 .h1-carrusel {
+  text-align: start;
   font-family: "Lilita One", sans-serif;
   font-size: 48px;
   line-height: 55px;
@@ -11864,6 +11872,7 @@ textarea.form-control-lg {
 }
 
 .h2-carrusel {
+  text-align: start;
   font-family: "Rubik", sans-serif;
   font-size: 32px;
   line-height: 38px;
@@ -11894,6 +11903,16 @@ textarea.form-control-lg {
   line-height: 26px;
   font-weight: 400;
   color: #361C07;
+}
+
+.boton {
+  background-color: #D6B200;
+  padding: 12px 24px;
+  border-radius: 22px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  color: #FFFFFF;
 }
 
 * {
@@ -11935,7 +11954,6 @@ textarea.form-control-lg {
 
 /* Carrusel */
 .carousel {
-  height: 100% vh;
   top: -60px;
   z-index: 0;
   background-image: url(../img/carrusel-bg.png);
@@ -11949,10 +11967,68 @@ textarea.form-control-lg {
   right: 50%;
 }
 
-/* .carousel-item.active {
-    height: 100vh;
+.bgcho {
+  text-align: center;
+  position: relative;
+  top: -200px;
+  width: 100%;
+  background-image: url(../img/bgcho.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
-.carousel-item {
-    height: 100vh;
-} *//*# sourceMappingURL=style.css.map */
+.services {
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 0px 80px 80px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: -60px;
+}
+.services h2, .services .h2 {
+  margin-top: -60px;
+}
+.services h3, .services .h3 {
+  font-weight: 100;
+  margin-top: 20px;
+  font-size: 25px;
+  color: #C66819;
+}
+.services p {
+  margin-top: 50px;
+  width: 55%;
+  align-self: center;
+}
+
+.bgch2 {
+  text-align: center;
+  height: 100vh;
+  width: 100%;
+  background-image: url(../img/bgcho2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.bgch2 h2, .bgch2 .h2 {
+  transform: rotate(-3deg);
+  font-size: 65px;
+  margin-top: -30px;
+  color: #ffffff;
+  font-weight: 800;
+}
+.bgch2 .h2hi {
+  font-size: 55px;
+}
+
+.nosotros h2, .nosotros .h2 {
+  color: #D12216;
+  margin-top: -40px;
+  font-size: 45px;
+  font-weight: 300;
+  margin-bottom: 70px;
+}
+.nosotros .text1 {
+  margin-left: 40px;
+}/*# sourceMappingURL=style.css.map */
