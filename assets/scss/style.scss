@@ -30,6 +30,13 @@
     font-weight: 600;
     color: #D12314;
 }
+.h1 {
+    text-align: start;
+    font-family: 'Lilita One', sans-serif;
+    font-size: 48px;
+    line-height: 55px;
+    color: #D12314;
+}
 .h2 {
     font-family: 'Lilita One', sans-serif;
     font-size: 48px;
@@ -56,9 +63,28 @@
     padding: 12px 24px;
     border-radius: 22px;
     font-family: 'Rubik', sans-serif;
+    font-size: 22px;
     font-weight: 600;
     font-style: italic;
     color: #FFFFFF;
+    transition: all ease-in-out 200ms;
+}
+.boton-disabled {
+    opacity: 50%;
+    background-color: #D6B200;
+    padding: 12px 24px;
+    border-radius: 22px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    font-style: italic;
+    color: #FFFFFF;
+    transition: all ease-in-out 200ms;
+}
+.boton:hover {
+    padding: 12px 50px;
+    border: #FFFFFF 2px solid;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 5px 10px;
 }
 
 // Header 
@@ -71,8 +97,13 @@
 .header {
     position: relative;
     z-index: 100;
+    svg {
+        margin-top: -20px;
+    }
 }
 .navbar {
+    --bs-navbar-toggler-border-color: rgba(255, 255, 255, 0.5)!important;
+    --bs-navbar-toggler-icon-bg: url(../img/nav-icon.svg)!important;
     .container {
         max-width: 100%;
         margin-left: 10%;
@@ -98,8 +129,26 @@
     }
 }
 
+.navbar-toggler-icon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    background-image: var(--bs-navbar-toggler-icon-bg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
 /* Carrusel */
-.carousel {
+.carousel-control-prev-icon {
+    background-image: url(../img/awesome-angle-left.svg);
+}
+.carousel-control-next-icon {
+    background-image: url(../img/awesome-angle-right.svg);
+}
+
+.carousel-top-inicio {
     top: -60px;
     z-index: 0;
     background-image: url(../img/carrusel-bg.png);
@@ -107,50 +156,64 @@
     background-size: cover;
     background-position: center;
 }
-.carousel-caption {
+
+.carousel-top-inicio .carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: 15%;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-right: 15%;
+    margin-bottom: 1rem;
+    margin-left: 15%;
+}
+
+.carousel-top-inicio .carousel-caption {
     top: 44%;
     right: 50%;
 }
 
-
-.bgcho{
-    text-align: center;
-    position: relative;
-    top: -200px;
-    width: 100%;
-    background-image: url(../img/bgcho.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+.productos-main {
+    margin-top: 150px;
 }
 
-
-.services{
-    align-items: center;
-    margin-bottom: 30px;
-    padding: 0px 80px 80px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: -60px;
-
-    h2{
-        margin-top: -60px;
+.productos {
+    .productos-d {
+        opacity: 50%;
     }
-
-    h3{
-        font-weight: 100;
-        margin-top: 20px;
-        font-size: 25px;
-        color: #C66819;
+    span {
+        &.h1 {
+            color: #361C07;
+        }
     }
-
-    p{
-        
-        margin-top: 50px;
-        width: 55%;
-        align-self: center;
+    .productos-p {
+        transition: all ease-in-out 500ms;
     }
+    .productos-p:hover {
+        transform: scale(1.1);
+    }
+}
+
+.nuestras-tiendas {
+    .nuestras-tiendas-t {
+        transition: all ease-in-out 500ms;
+    }
+    .nuestras-tiendas-t:hover {
+        transform: scale(1.1);
+    }
+}
+
+.services {
+    .p {
+        padding: 0 20%;
+    }
+}
+
+.stgo-slider {
+    margin-top: 250px;
 }
 
 .bgch2{
@@ -161,11 +224,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    
- 
-  
-    
-    
     h2{
         transform: rotate(-3deg);
         font-size: 65px;
@@ -177,7 +235,6 @@
     .h2hi{
         font-size: 55px;
     }
-    
 }
 
 .bgch3{
@@ -205,7 +262,67 @@
     
 }
 
+.bgcho{
+    display: flex;
+    text-align: center;
+    position: relative;
+    align-items: center;
+    top: -85px;
+    height: 650px;
+    width: 100%;
+    background-image: url(../img/banner-cohete-png.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 
+.banner-top {
+    display: flex;
+    text-align: center;
+    position: relative;
+    align-items: center;
+    top: -85px;
+    height: 650px;
+    width: 100%;
+    background-image: url(../img/banner-top-png.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    h2{
+        transform: rotate(3deg);
+        font-size: 75px;
+        color: #ffffff;
+        font-weight: 800;
+        
+    }
+    .h2hi{
+        font-size: 65px;
+    }  
+}
+
+.banner{
+    display: flex;
+    text-align: center;
+    position: relative;
+    align-items: center;
+    margin: 200px 0;
+    height: 650px;
+    width: 100%;
+    background-image: url(../img/banner-png.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    h2{
+        transform: rotate(3deg);
+        font-size: 75px;
+        color: #ffffff;
+        font-weight: 800;
+        
+    }
+    .h2hi{
+        font-size: 65px;
+    }  
+}
 
 .nosotros{
     h2{
@@ -218,5 +335,95 @@
 
 .tiendas{
     margin-top: -200px;
+}
+
+.services2{
+    margin-bottom: 30px;
+    padding: 0px 80px 80px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    h2{
+        margin-top: -70px;
+
+    }
+
+    h3{
+
+        font-weight: 100;
+
+        font-size: 20px;
+        color: #C66819;
+    }
+
+    h4{
+        font-size: 15px;
+    }
+
+    p{
+      margin-bottom: 120px;
+
+
+
+    }
+ 
+}
+
+.producto {
+    margin: 150px 0;
+    margin-bottom: 300px;
+    .h3 {
+        color: #D12314;
+    }
+}
+
+footer {
+    margin-top: 300px;
+    svg {
+        margin-bottom: -10px;
+    }
+}
+
+.footer {
+    min-height: 425px;
+    background-color: #592E0A;
+    a {
+        img {
+            margin-bottom: 20px;
+        }
+        &.p-footer:hover {
+            font-family: 'Rubik', sans-serif;
+            font-size: 20px;
+            line-height: 26px;
+            font-weight: 400;
+            color: #8b8b8b;
+            margin: 0;
+        }
+    }
+    .row {
+        width: 100%;
+        margin: 0 10%;
+    }
+}
+
+.h2-footer {
+    display: inline;
+    text-align: start;
+    font-family: 'Rubik', sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+    font-style: italic;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.p-footer {
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #ffffff;
+    margin: 0;
 }
 
